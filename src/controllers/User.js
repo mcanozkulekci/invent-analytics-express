@@ -47,7 +47,7 @@ const create = (req, res) => {
 };
 
 const borrowBook = (req, res) => {
-  insert(req.params.userId)
+  findOne(req.params.userId)
     .then((response) => {
       if (!response) {
         res.status(404).send("Bu idye sahip bir kullanici bulunamadi");

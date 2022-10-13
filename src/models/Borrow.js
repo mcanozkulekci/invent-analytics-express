@@ -14,6 +14,7 @@ const Borrow = db.define(
       allowNull: false,
       defaultValue: moment().format(),
     },
+
     returned_at: {
       type: DataTypes.DATEONLY,
       allowNull: true,
