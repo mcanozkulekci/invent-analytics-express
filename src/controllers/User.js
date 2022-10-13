@@ -66,7 +66,7 @@ const borrowBook = (req, res) => {
                     bookId: req.params.bookId,
                   });
                 } catch (e) {
-                  res.status(500).send(e.message);
+                  res.status(500).send(e.message + "d");
                 }
                 var newLoanCount = book.borrow_count + 1;
                 console.log(newLoanCount);
