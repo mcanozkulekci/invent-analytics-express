@@ -27,6 +27,4 @@ const Book = db.define(
 
 Book.sync({ alter: true });
 
-module.exports = {
-  Book,
-};
+module.exports = Book;
